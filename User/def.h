@@ -2,6 +2,7 @@
 #define _DEF_H
 
 
+#include <stdint.h>
 
 //////// bool ////////
 #define false   (0)
@@ -14,8 +15,8 @@ typedef unsigned char   uint8_t;
 typedef signed char     int8_t;
 typedef unsigned short  uint16_t;
 typedef signed short    int16_t;
-typedef unsigned long   uint32_t;
-typedef signed long     int32_t;
+//typedef unsigned long   uint32_t;
+//typedef signed long     int32_t;
 typedef float           float32_t;
 typedef double          float64_t;
 
@@ -66,7 +67,7 @@ typedef double          float64_t;
 #define REG_BITS_WRITE(reg, msk, val)		{(reg) = ((reg) & (~(msk))) | (val);}
 
 
-
+#if 0
 //////// union Ð¡¶ËÄ£Ê½ ////////
 typedef union 
 {
@@ -81,6 +82,7 @@ typedef union
     uint32_t    u32;
     float32_t   fp32;
 } union32_t;
+#endif
 
 #endif
 

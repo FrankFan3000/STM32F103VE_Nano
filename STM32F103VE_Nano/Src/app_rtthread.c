@@ -22,14 +22,16 @@
  */
 
 #include <rtthread.h>
+#include "includes.h"
 
 void MX_RT_Thread_Init(void)
 {
-
+    Led_Initialize();
 }
 
 void MX_RT_Thread_Process(void)
 {
-
+    rt_thread_delay(1);
+    Led_Task();
 }
 
