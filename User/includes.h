@@ -6,12 +6,13 @@
 //#include <stdlib.h>
 #include "main.h"
 
-//#include <rtthread.h>
+#include <rtthread.h>
 //#include <rtdevice.h>
 //#include <board.h>
 
-
 #include "def.h"
+#include "user.h"
+
 #include "led.h"
 //#include "key.h"
 //#include "exti.h"

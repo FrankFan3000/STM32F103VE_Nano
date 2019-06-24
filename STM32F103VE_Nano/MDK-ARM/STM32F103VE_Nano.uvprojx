@@ -54,7 +54,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>1</BrowseInformation>
+          <BrowseInformation>0</BrowseInformation>
           <ListingPath></ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE,USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Middlewares/Third_Party/RT-Thread//components/finsh/;../Middlewares/Third_Party/RT-Thread//include/;../Middlewares/Third_Party/RT-Thread//components/drivers/include/;../Middlewares/Third_Party/RT-Thread//components/drivers/include/drivers/;../Middlewares/Third_Party/RT-Thread//components/drivers/include/ipc/;../Middlewares/Third_Party/RT-Thread//bsp/;..\..\User;..\..\User\bsp;..\..\User\app</IncludePath>
+              <IncludePath>../Inc; ../Drivers/STM32F1xx_HAL_Driver/Inc; ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy; ../Drivers/CMSIS/Device/ST/STM32F1xx/Include; ../Drivers/CMSIS/Include; ../Middlewares/Third_Party/RT-Thread//components/finsh/; ../Middlewares/Third_Party/RT-Thread//include/; ../Middlewares/Third_Party/RT-Thread//components/drivers/include/; ../Middlewares/Third_Party/RT-Thread//components/drivers/include/drivers/; ../Middlewares/Third_Party/RT-Thread//components/drivers/include/ipc/; ../Middlewares/Third_Party/RT-Thread//bsp/; ..\..\User; ..\..\User\bsp; ..\..\User\app</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -488,6 +488,32 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>User</GroupName>
+          <Files>
+            <File>
+              <FileName>user.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\user.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User/bsp</GroupName>
+        </Group>
+        <Group>
+          <GroupName>User/app</GroupName>
+          <Files>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\app\led.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
           <GroupName>Middlewares/RT-Thread/RTOS/shell</GroupName>
           <Files>
             <File>
@@ -616,25 +642,6 @@
               <FilePath>../Middlewares/Third_Party/RT-Thread/libcpu/arm/cortex-m3/cpuport.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>User</GroupName>
-        </Group>
-        <Group>
-          <GroupName>User/bsp</GroupName>
-        </Group>
-        <Group>
-          <GroupName>User/app</GroupName>
-          <Files>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\app\led.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
     </Target>
