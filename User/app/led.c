@@ -9,17 +9,15 @@ volatile uint32_t Led_Tick = 0;
 
 void Led_Initialize(void)
 {
-    #if 0
     LED1_OFF();
-    LED_RED_OFF();
+    //LED_RED_OFF();
     //LED_GREEN_OFF();
     //LED_BLUE_OFF();
     
-    rt_pin_mode(LED1_PIN, PIN_MODE_OUTPUT);
-    rt_pin_mode(LED_RED_PIN, PIN_MODE_OUTPUT);
+    //rt_pin_mode(LED1_PIN, PIN_MODE_OUTPUT);
+    //rt_pin_mode(LED_RED_PIN, PIN_MODE_OUTPUT);
     //rt_pin_mode(LED_GREEN_PIN, PIN_MODE_OUTPUT);
     //rt_pin_mode(LED_BLUE_PIN, PIN_MODE_OUTPUT);
-    #endif
 }
 
 
