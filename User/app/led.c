@@ -9,7 +9,8 @@ volatile uint32_t Led_Tick = 0;
 
 void Led_Initialize(void)
 {
-    LED1_OFF();
+    //LED_RED_ON();
+    //LED1_OFF();
     //LED_RED_OFF();
     //LED_GREEN_OFF();
     //LED_BLUE_OFF();
@@ -25,7 +26,6 @@ void Led_Initialize(void)
 
 void Led_Task(void)
 {
-    #if 0
     switch (Led_Tick)
     {
         case 0:
@@ -35,6 +35,7 @@ void Led_Task(void)
             LED_RED_OFF();
             break;
 
+#if 0
         case 1000:
             LED_GREEN_ON();
             break;
@@ -48,6 +49,7 @@ void Led_Task(void)
         case 2200:
             LED_BLUE_OFF();
             break;
+#endif
 
         default:
             break;
@@ -55,7 +57,7 @@ void Led_Task(void)
     }
 
 
-    if (Led_Tick < 3000 - 1)
+    if (Led_Tick < 1000 - 1)
     {
         Led_Tick++;
     }
@@ -63,7 +65,6 @@ void Led_Task(void)
     {
         Led_Tick = 0;
     }
-    #endif
     
 }
 

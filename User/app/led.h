@@ -7,8 +7,12 @@
 //#define LED1_PIN            (GET_PIN(B, 10))
 //#define LED1_ON()           {rt_pin_write(LED1_PIN, PIN_LOW);}
 //#define LED1_OFF()          {rt_pin_write(LED1_PIN, PIN_HIGH);}
-#define LED1_ON()           {HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET);}
-#define LED1_OFF()          {HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET);}
+//#define LED1_ON()           {HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET);}
+//#define LED1_OFF()          {HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET);}
+
+
+#define LED_RED_ON()           {HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);}
+#define LED_RED_OFF()          {HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);}
 
 
 #if 0
